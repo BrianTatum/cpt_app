@@ -10,7 +10,7 @@ export default class NavHeader extends React.Component {
 			    <div className='container'>
 			        <div className='navbar-header'>
 			          <a href='/' className='navbar-brand main-color'>
-			              <span className='hidden-xs'>Child Protection Training</span>
+			              <span>Child Protection Training</span>
 			          </a>
 			          <button type='button' className='navbar-toggle main-color highlight'
 			                                data-toggle='collapse'
