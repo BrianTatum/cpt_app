@@ -1,0 +1,185 @@
+body{
+  font-size: 18px;
+}
+.container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* Sets color accross the site */
+.main-color {
+  background-color: #1b5e20 !important;
+  color: #fafafa !important;
+}
+.main-color:hover {
+  color: #eeeeee !important;
+}
+.highlight:hover, .highlight:focus {
+  background-color: #2e7d32 !important;
+}
+.main-color-border {
+  border-color: #1b5e20 !important;
+}
+/* Narbar settings accross site */
+.navbar-toggle {
+  border-color: #fafafa !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fafafa;
+}
+.navbar-brand {
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+  color: #e0e0e0;
+  height: auto;
+}
+.branding{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4.5em;
+}
+/* Index page picture heading with slideshow and slogon */
+.slogon {
+    font-family: 'Acme', sans-serif;
+    font-weight: normal;
+    font-size: 1.75vw;
+    color: white;
+    margin: 0;
+}
+.welcome-header {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+}
+/* Moves the slide show down into the header pic */
+.vertical-center {
+    margin-top: 15%;
+}
+.slide-border{
+    border: 5px solid white;
+}
+/* Fix for IE Pic size in carousel */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+.vbottom {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+/* Call to action butons on index page */
+.index-action{
+    width: 200px;
+}
+/* Fomates the panels accross the site */
+.panel-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.bold-btn {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+/* Sets the font and alinment of the icons accross the site */
+.fa.inline, .glyphicons.inline {
+  padding-right: 10px;
+  width: 40px;
+}
+.fa.icon-link {
+    font-size: 125px;
+    text-align: center;
+    display: block;
+}
+a .fa{
+    text-decoration: none;
+}
+a .icon-text{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.box {
+  border: 1px solid black;
+}
+/* Table forms across site */
+tbody th {
+    font-weight: normal;
+}
+/* Sets the styles for the footer accross the site */
+.footer {
+    color: #efefef;
+    background-color: #333;
+}
+.email_link{
+  color: #efefef;
+}
+.email_link:hover, .email_link:focus {
+  color: #afafaf;
+}
+/* Set styles for the modals accross the side and changes mouse pointer on openers */
+.mouse-pointer{
+    cursor:pointer;
+}
+.modal-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-body {
+    max-height: 75vh;
+    overflow: auto;
+}
+.modal-close {
+    width: 150px;
+}
+/* Responsive iFrame for Google Calendar */
+ 
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Media Querries for Custom classes */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (min-width: 768px) {
+    .nopadding-sm {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    .nopadding-md {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .nopadding-lg {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
