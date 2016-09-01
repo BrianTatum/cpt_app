@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router';
 
 import NavHeader from './layout_comps/NavHeader';
 import PageFooter from './layout_comps/PageFooter';
