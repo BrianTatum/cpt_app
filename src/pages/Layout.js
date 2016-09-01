@@ -10,13 +10,7 @@ export default class Layout extends React.Component {
 		return (
 			<div style={bodyDown}>
 				<NavHeader />
-				<h1>Child Protection Training</h1>
-				<Link to='/Welcome' className='btn btn-success'>Welcome</Link>
-				<Link to="/Video" className='btn btn-success'>Video</Link>
-				<Link to='/Questions' className='btn btn-success'>Questions</Link>
-				<Link to='/Ending' className='btn btn-success'>Ending</Link>
-				<Link to='/Cert' className='btn btn-success'>Cert</Link>
-				
+								
 				{this.props.children}
 
 				<PageFooter />

@@ -19,6 +19,13 @@ body{
 .main-color-border {
   border-color: #1b5e20 !important;
 }
+.panel-default>.panel-heading {
+  background-color: #1b5e20 !important;
+  color: #fafafa !important;
+}
+.panel-default {
+   border-color: #1b5e20 !important;
+}
 /* Narbar settings accross site */
 .navbar-toggle {
   border-color: #fafafa !important;
