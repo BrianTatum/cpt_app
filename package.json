@@ -1,17 +1,17 @@
 {
-  "name": "babel-with-gulp",
+  "name": "cpt_app",
   "version": "1.0.0",
-  "description": "Starter code for using Babel with Gulp",
+  "description": "Child Protection Training",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp watch"
   },
-  "author": "Carlos Souza <carloshrsouza@gmail.com> (http://csouza.me/)",
+  "author": "Brian Tatum <brianttatum@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/codeschool/babel-with-gulp.git"
+    "url": "https://github.com/BrianTatum/cpt_app.git"
   },
   "keywords": [
     "babel",
