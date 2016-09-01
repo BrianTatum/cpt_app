@@ -6,14 +6,14 @@ body{
   padding-bottom: 5px;
 }
 /* Sets color accross the site */
-.main-color {
+.main-color, .navbar-default .navbar-nav>li>a {
   background-color: #1b5e20 !important;
   color: #fafafa !important;
 }
-.main-color:hover {
+.main-color:hover,  {
   color: #eeeeee !important;
 }
-.highlight:hover, .highlight:focus {
+.highlight:hover, .highlight:focus, .navbar-default .navbar-nav>li>a:hover {
   background-color: #2e7d32 !important;
 }
 .main-color-border {

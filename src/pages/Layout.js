@@ -6,8 +6,9 @@ import PageFooter from './layout_comps/PageFooter';
 
 export default class Layout extends React.Component {
 	render(){
+		const bodyDown = {marginTop: '70px'};
 		return (
-			<div>
+			<div style={bodyDown}>
 				<NavHeader />
 				<h1>Child Protection Training</h1>
 				<Link to='/Welcome' className='btn btn-success'>Welcome</Link>
