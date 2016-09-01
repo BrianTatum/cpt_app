@@ -13,8 +13,8 @@ export default class NavHeader extends React.Component {
 		    </Navbar.Header>
 		    <Navbar.Collapse>
 		      <Nav pullRight>
-		        <NavItem eventKey={1} href="#" className='main-color highlight'>Starting Training</NavItem>
-		        <NavItem eventKey={2} href="#" className='main-color highlight'>Print Certificate</NavItem>
+		        <NavItem eventKey={1} href="/#/CptClass" className='main-color highlight'>Starting Training</NavItem>
+		        <NavItem eventKey={2} href="/#/LookUp" className='main-color highlight'>Print Certificate</NavItem>
 		      </Nav>
 		    </Navbar.Collapse>
 		  </Navbar>
