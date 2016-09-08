@@ -93,6 +93,9 @@ body{
   font-size: 22px;
   margin-bottom: 20px;
 }
+.RegList{
+  padding-right: 20px !important;
+}
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
