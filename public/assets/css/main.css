@@ -118,8 +118,32 @@ a .icon-text{
   border: 1px solid black;
 }
 /* Table forms across site */
-tbody th {
-    font-weight: normal;
+.table-fixed thead, .table-fixed tfoot {
+  width: 97%;
+  width: -moz-calc(100% - 30px);
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px); 
+}
+.table-fixed tbody tr {
+  width: 100%;
+}
+.table-fixed tbody {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tfoot, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th, .table-fixed tfoot > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+tbody {
+  border-top: solid 3px #1b5e20 !important;
+  border-bottom: solid 3px #1b5e20 !important;
 }
 /* Sets the styles for the footer accross the site */
 .footer {
@@ -172,21 +196,45 @@ tbody th {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.nopadding-xs, .nopadding-xs>.panel-body {
+  padding: 0 !important;
+}
+/* Responsive text aligning */
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
 @media screen and (min-width: 768px) {
     .nopadding-sm {
         padding: 0 !important;
         margin: 0 !important;
     }
+    /* Responsive text aligning */
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
 }
 @media screen and (min-width: 992px) {
     .nopadding-md {
         padding: 0 !important;
         margin: 0 !important;
     }
+    /* Responsive text aligning */
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
 }
 @media screen and (min-width: 1200px) {
     .nopadding-lg {
         padding: 0 !important;
         margin: 0 !important;
     }
+    /* Responsive text aligning */
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import{ Panel } from 'react-bootstrap';
+
+import AdultReq from './layout_comps/AdultReq';
 
 export default class Welcome extends React.Component {
 	render(){
-    const panelTitle = (<strong>Adult Requirements</strong>);
-		return (
+    return (
 			<div className='container'>
         <div className='row'>
           <div className='col-md-8 col-xs-12'>
@@ -13,12 +13,7 @@ export default class Welcome extends React.Component {
             <p className='text-justify'>Once you have successfully completed the CPT class, with a passing score, enter your name and email address in the provided fields to generate your certificate. Use the browser print function to print out a copy to give to the camp. Please be sure to sign the copy stating that you watched all the videos and completed the course yourself. Then have your pastor or group leader sign the affirmation statement after they have completed your yearly background check. Certificates may be reprinted by clicking “Print Certificate” at the top of the screen.</p>
           </div>
           <div className='col-md-4 col-xs-12'>
-            <Panel header={panelTitle} className='text-center'>
-              <ol>
-                <li className='text-justify'>Submit printed copies of results from criminal and sex offender background checks for the current year.</li>
-                <li className='text-justify'>Complete a state-approved training and examination program on sexual abuse and child molestation and submit a valid certificate of completion.</li>
-              </ol>
-            </Panel>
+            <AdultReq />
             <div className='row'>
               <div className='col-xs-12'>
                 <h3 className='text-center'>

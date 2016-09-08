@@ -1,0 +1,14 @@
+{
+  "RecordFound": true,
+  "cert": [
+      {
+        "FirstName": "Brian",
+        "Email": "brian@etbe.org",
+        "Score": 100,
+        "created_at": "",
+        "updated_at": "",
+        "LastName": "Tatum"
+      }
+    ],
+  "errMsgs": []
+}
