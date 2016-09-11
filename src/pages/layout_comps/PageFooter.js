@@ -3,7 +3,7 @@ import React from 'react'
 export default class PageFooter extends React.Component {
 	render() {
 		return (
-			<div className='footer'>
+			<div className='footer hidden-print'>
 		      <div className='container'>
 		        <div className='row'>
 		          <div className='col-xs-12 col-sm-4'>

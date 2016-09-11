@@ -1,6 +1,7 @@
 body{
   font-size: 18px;
 }
+.bodyDown {margin-top: 70px}
 .container {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -240,4 +241,17 @@ tbody {
     .text-lg-right { text-align: right; }
     .text-lg-center { text-align: center; }
     .text-lg-justify { text-align: justify; }
+}
+@media print {
+  .bodyDown {margin-top: 0}
+}
+#cert-sec {
+  border: 20px solid black;
+  padding: 10px;
+  font-family: "Times New Roman", Georgia, Serif; 
+  margin-top: 20px;
+}
+#cert-sec > .cert-fraim {
+    border: 5px solid black;
+  } 
 }

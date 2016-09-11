@@ -4,14 +4,19 @@ import $ from "jquery";
 import AdultReq from './layout_comps/AdultReq';
 import CertList from './layout_comps/CertList';
 import LookUpForm from './layout_comps/LookUpForm';
+import globalData from './layout_comps/globalData';
 
 export default class LookUp extends React.Component {
 	constructor() {
 	    super();
 	    this._getCerts = this._getCerts.bind(this)
 	    this.state = {
-	    	cptCerts: []
+	    	cptCerts: globalData.certList
 	    }
+	}
+	
+	componentWillUnmount() {
+		globalData.certList = this.state.cptCerts;
 	}
 
 	render(){
@@ -47,7 +52,7 @@ export default class LookUp extends React.Component {
 	      url: urlString,
 	      dataType: 'jsonp',
 	      crossDomain: true,
-	      success: (data) => { this.setState({ cptCerts: data.cert })}
+	      success: (data) => { 	this.setState({ cptCerts: data.cert })}
 		});
 	}
 }

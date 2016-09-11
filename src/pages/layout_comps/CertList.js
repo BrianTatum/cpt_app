@@ -28,11 +28,13 @@ export default class CertList extends React.Component {
 	}
 
 	_getCerts(){
-		return this.props.cptCerts.map((certs) => {
+		return this.props.cptCerts.map((certs, i) => {
 	      return <CertRows
-	               Name={certs.FirstName + ' ' + certs.LastName}
+	               fName={certs.FirstName}
+	               lName={certs.LastName}
 	               date={certs.created_at}
 	               email={certs.Email}
+	               arrayIndex={i}
 	               key={certs.id} />
 	    });
 	}

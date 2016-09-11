@@ -19,7 +19,7 @@ jQuery(function() {
     		<Route path='CptClass' component={CptClass}/>
     		<Route path='Ending' component={Ending}/>
             <Route path='LookUp' component={LookUp}/>
-    		<Route path='Cert' component={Cert}/>
+    		<Route path='Cert/:arrayIndex' component={Cert}/>
     	</Route>
     </Router>,
     document.getElementById('app')
