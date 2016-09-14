@@ -1,18 +1,33 @@
 [
 	{
 	    "id": 1,
-	    "title": "First Section of CPT",
+	    "title": "First Section of CPT in file",
 	    "videoPath": "www.video.url",
+	    "graded": false,
 	    "questionList": [
 	    	{
-		    	"questId": 1
+		    	"questId": 1,
 		    	"questText": "What is your question?",
 		    	"answers": [
 		    		"Answer 1",
-		    		"Ansser 2",
+		    		"Answer 2",
 		    		"Answer 3"
 		    	],
-		    	"correct": 1
+		    	"correct": 1,
+		    	"responce": "",
+		    	"markmarkCoreect": false
+	    	},
+	    	{
+		    	"questId": 2,
+		    	"questText": "What is your 2nd question?",
+		    	"answers": [
+		    		"Answer 1",
+		    		"Answer 2",
+		    		"Answer 3"
+		    	],
+		    	"correct": 2,
+		    	"responce": "",
+		    	"markCorrect": false
 	    	}
 	    ]
 	}
