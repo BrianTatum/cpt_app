@@ -11,11 +11,7 @@ export default class CptClass extends React.Component {
 	    super();
 	    this.state = {
 	      activeKey: '1',
-	      curentSection: 1,
-	      totalSections: 4,
-	      cptScore: 0,
 	      cptClass: globalData.cptClass,
-	      answers: []
 	    };
 	  }
 
@@ -25,13 +21,16 @@ export default class CptClass extends React.Component {
 
 	componentWillMount() {
 		this._fetchCptClass();
-		const sectionCount = this.state.cptClass.length;
-	    this.setState({	totalSections: sectionCount,
-	    				curentSection: 0});
+	    this.setState({	curentSection: 0,
+	    				cptScore: 0,
+	      				correctAnswers: 0,
+	      				totalQuestion: 0,});
 	  }
 
 	render(){
-		const questions = this._getQuestions(this.state.cptClass[this.state.curentSection].questionList);
+		const questions = this._getQuestions(this.state.cptClass[this.state.curentSection].questionList, this.state.curentSection);
+		const displaySubmitButton = this._displaySubmitButton();
+		const displayNextButton = this._displayNextButton();
 		return (
 			<div className='container'>
 				<div className='row'>
@@ -52,28 +51,29 @@ export default class CptClass extends React.Component {
 					        <Panel header="Section Video" eventKey="1">Panel 1 content</Panel>
 					    	<Panel header="Test Questions" eventKey="2">
 					    		<h3 className='text-justify'>Please answer all test questions and then submit answers to contenue.</h3>
-					    		<form className="" onSubmit={this._handleSubmit.bind(this)}>
+					    		<form id="testForm" className="" onSubmit={this._handleSubmit.bind(this)}>
 					    			<ListGroup>
     									{questions}
     								</ListGroup>
-    								<button className='btn btn-success active pull-right' type="submit">Submit</button>
+    								{displaySubmitButton}
 					    		</form>
+					    		{displayNextButton}
 					    	</Panel>
 					    </PanelGroup>
 					</div>
 					<div className='col-md-3'>
-						<ScorePanel section={this.state.curentSection + 1} score={this.state.cptScore} totalSections={this.state.totalSections}  />
+						<ScorePanel section={this.state.curentSection + 1} score={this.state.cptScore} totalSections={this.state.cptClass.length}  />
 					</div>
 				</div>
 			</div>
 		);
 	}
 
-	_getQuestions(questions) {
+	_getQuestions(questions, section) {
 		return questions.map((quest,i) => {
 			return <TestQuestion question={quest.questText}
 								 choices={quest.answers}
-								 answerName={'question'+i}
+								 answerName={section+'question'+i}
 							 	 answer={this._recordAnswer.bind(this)}
 							 	 arrayIndex={i}
 							 	 responce={quest.responce}
@@ -91,14 +91,45 @@ export default class CptClass extends React.Component {
 		//this.setState({cptClass[this.state.curentSection].questionList[question].responce: answer});
 	}
 
+	_displaySubmitButton() {
+		if (this.state.cptClass[this.state.curentSection].graded) {
+			return <span />
+		} else {
+			return <button className='btn btn-success btn-lg active pull-right' type="submit">Submit</button>
+		}
+	}
+	_displayNextButton() {
+		if (this.state.cptClass[this.state.curentSection].graded) {
+			return <button className='btn btn-success btn-lg active pull-right' onClick={this._changeSection.bind(this)}>Next Section</button>
+		} else {
+			return <span />
+		}
+	}
+
 	_handleSubmit(event) {
 		event.preventDefault();
 		const stateCopy = Object.assign({}, this.state);
 		stateCopy.cptClass[this.state.curentSection].questionList.forEach ((q) => {
-			q.markCorrect = (q.correct == q.responce);
+			if (q.correct == q.responce) {
+				q.markCorrect = true;
+				stateCopy.correctAnswers += 1;
+			}
+			stateCopy.totalQuestion += 1;
 		});
+		stateCopy.cptScore= Math.round((stateCopy.correctAnswers/stateCopy.totalQuestion)*100);
 		stateCopy.cptClass[this.state.curentSection].graded=true;
 		this.setState(stateCopy);
+	}
+
+	_changeSection() {
+		if (this.state.curentSection < this.state.cptClass.length - 1) {
+			const nextSection = this.state.curentSection + 1;
+		    this.setState({	curentSection: nextSection,
+		    				activeKey: '1'});
+		    jQuery('#testForm').trigger('reset');;
+		} else {
+			alert ('End of CPT Class');
+		}
 	}
 
 	_fetchCptClass() {
