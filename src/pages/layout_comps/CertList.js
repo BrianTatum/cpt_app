@@ -4,10 +4,12 @@ import{ Panel } from 'react-bootstrap';
 import CertRows from './CertRows';
 
 export default class CertList extends React.Component {
+	
 	render() {
 		const RowStyle = {marginLeft: '0px'};
 		const panelTitle = (<strong>Certification List</strong>);
 		const certs = this._getCerts();
+		
 		return (
 			<Panel header={panelTitle} className='text-center nopadding-xs'>
 				<table className='table table-hover table-fixed'>
@@ -37,5 +39,13 @@ export default class CertList extends React.Component {
 	               arrayIndex={i}
 	               key={certs.id} />
 	    });
+	}
+
+	_close() {
+	    this.setState({ showModal: false });
+	}
+
+	_open() {
+	    this.setState({ showModal: true });
 	}
 }
