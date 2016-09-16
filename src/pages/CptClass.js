@@ -57,7 +57,7 @@ export default class CptClass extends React.Component {
 						<PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect.bind(this)} accordion>
 					        <Panel header="Section Video" eventKey="1">
 					        	<div className='responsive-iframe-container'>
-					        		<iframe src="https://player.vimeo.com/video/63165969" width="640" height="427" frameBorder="0" allowFullScreen></iframe>					        	
+					        		<iframe src={this.state.cptClass[this.state.curentSection].videoPath} width="640" height="427" frameBorder="0" allowFullScreen></iframe>					        	
 					        	</div>
 					        </Panel>
 					    	<Panel header="Test Questions" eventKey="2">
@@ -172,7 +172,7 @@ export default class CptClass extends React.Component {
 	_fetchCptClass() {
 		jQuery.ajax({
 	      method: 'GET',
-	      url: 'cptclass.json',
+	      url: 'cptFullClass.json',
 	      dataType: 'json',
 	      success: (cptClass) => {
 	      	this.setState({cptClass});

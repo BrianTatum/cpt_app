@@ -2,7 +2,7 @@
 	{
 	    "id": 1,
 	    "title": "The Definitions and Effects of Sexual Abuse and Child Molestation",
-	    "videoPath": "http://player.vimeo.com/video/63165969?title=0&amp;byline=0&amp;portrait=0",
+	    "videoPath": "https://player.vimeo.com/video/63165969",
 	    "graded": false,
 	    "questionList": [
 	    	{
@@ -87,7 +87,7 @@
 	{
 	    "id": 2,
 	    "title": "Typical Patterns and Methods of Operation of a Child Molestern",
-	    "videoPath": "www.video.url",
+	    "videoPath": "https://player.vimeo.com/video/63165970",
 	    "graded": false,
 	    "questionList": [
 	    	{
@@ -167,7 +167,7 @@
 	{
 	    "id": 3,
 	    "title": "Signs, Symptoms and Reporting of Suspected Sexual Abuse",
-	    "videoPath": "www.video.url",
+	    "videoPath": "https://player.vimeo.com/video/63165972",
 	    "graded": false,
 	    "questionList": [
 	    	{
@@ -247,7 +247,7 @@
 	{
 	    "id": 4,
 	    "title": "Recommended Procedures to Reduce, Prevent and Report Suspected Sexual Abuse or Molestation of Campers",
-	    "videoPath": "www.video.url",
+	    "videoPath": "https://player.vimeo.com/video/63175730",
 	    "graded": false,
 	    "questionList": [
 	    	{
