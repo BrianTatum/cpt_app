@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 export default class CertRows extends React.Component {
 	render() {
 		const RowStyle = {marginLeft: '0px'};
-		const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Spt', 'Oct', 'Nov', 'Dec'];
+		const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 		const certDate = new Date(this.props.date);
 		const certLink = '/cert/' + this.props.arrayIndex;
 		return (

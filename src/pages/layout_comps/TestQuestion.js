@@ -43,9 +43,17 @@ export default class TestQuestion extends React.Component {
     _chooseMark() {
     	if (this.props.graded){
     		if (this.props.mark) {
-    			return (<CorrectMark />);
+    			const styling = {
+					color: 'green',
+				  	fontSize: '45px'
+				}
+    			return (<CorrectMark styling={styling}/>);
     		} else {
-				return (<WrongMark />);
+    			const styling = {
+					color: 'red',
+				  	fontSize: '45px'
+				}
+				return (<WrongMark styling={styling}/>);
 			}
 		} else {
 			return (<span />);

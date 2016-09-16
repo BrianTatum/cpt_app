@@ -1,19 +1,25 @@
 import React from 'react';
-import {PanelGroup, Panel, ListGroup} from 'react-bootstrap';
+import { hashHistory } from 'react-router';
+import {PanelGroup, Panel, ListGroup, Modal} from 'react-bootstrap';
 import jQuery from 'jquery';
 
 import ScorePanel from './layout_comps/ScorePanel';
 import globalData from './layout_comps/globalData';
-import TestQuestion from './layout_comps/TestQuestion'
+import TestQuestion from './layout_comps/TestQuestion';
+import CptEnd from './layout_comps/CptEnd';
+import CptRedo from './layout_comps/CptRedo';
 
 export default class CptClass extends React.Component {
+	
 	constructor() {
 	    super();
 	    this.state = {
 	      activeKey: '1',
+	      showModal: false,
 	      cptClass: globalData.cptClass,
 	    };
-	  }
+	    this.cptResult = (<h1>No Pass No Play</h1>);
+	}
 
 	handleSelect(activeKey) {
     	this.setState({ activeKey });
@@ -31,6 +37,7 @@ export default class CptClass extends React.Component {
 		const questions = this._getQuestions(this.state.cptClass[this.state.curentSection].questionList, this.state.curentSection);
 		const displaySubmitButton = this._displaySubmitButton();
 		const displayNextButton = this._displayNextButton();
+		
 		return (
 			<div className='container'>
 				<div className='row'>
@@ -48,7 +55,11 @@ export default class CptClass extends React.Component {
 				<div className='row'>
 					<div className='col-md-9'>
 						<PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect.bind(this)} accordion>
-					        <Panel header="Section Video" eventKey="1">Panel 1 content</Panel>
+					        <Panel header="Section Video" eventKey="1">
+					        	<div className='responsive-iframe-container'>
+					        		<iframe src="https://player.vimeo.com/video/63165969" width="640" height="427" frameBorder="0" allowFullScreen></iframe>					        	
+					        	</div>
+					        </Panel>
 					    	<Panel header="Test Questions" eventKey="2">
 					    		<h3 className='text-justify'>Please answer all test questions and then submit answers to contenue.</h3>
 					    		<form id="testForm" className="" onSubmit={this._handleSubmit.bind(this)}>
@@ -65,6 +76,14 @@ export default class CptClass extends React.Component {
 						<ScorePanel section={this.state.curentSection + 1} score={this.state.cptScore} totalSections={this.state.cptClass.length}  />
 					</div>
 				</div>
+				<Modal show={this.state.showModal} bsSize="large" onHide={this._close.bind(this)}>
+		          <Modal.Header closeButton>
+		            <Modal.Title>CPT Class Results</Modal.Title>
+		          </Modal.Header>
+		          <Modal.Body>
+		            {this.cptResult}
+		          </Modal.Body>
+		        </Modal>
 			</div>
 		);
 	}
@@ -82,6 +101,18 @@ export default class CptClass extends React.Component {
 								 key={i} />
 		}
 		);
+	}
+
+	_close() {
+	    this.setState({ showModal: false });
+	}
+
+	_reDirect(path){
+		hashHistory.push(path);
+	}
+
+	_open() {
+	    this.setState({ showModal: true });
 	}
 	
 	_recordAnswer(question,answer){
@@ -126,9 +157,15 @@ export default class CptClass extends React.Component {
 			const nextSection = this.state.curentSection + 1;
 		    this.setState({	curentSection: nextSection,
 		    				activeKey: '1'});
-		    jQuery('#testForm').trigger('reset');;
+		    jQuery('#testForm').trigger('reset');
+		    window.scrollTo(0,0);
 		} else {
-			alert ('End of CPT Class');
+			if (this.state.cptScore >= 70) {
+				this.cptResult = (<CptEnd score={this.state.cptScore}/>);
+			} else {
+				this.cptResult = <CptRedo path={this._reDirect.bind('/')}/>;
+			}
+			this._open();
 		}
 	}
 

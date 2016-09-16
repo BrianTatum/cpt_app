@@ -16,10 +16,10 @@ jQuery(function() {
     <Router history={hashHistory}>
     	<Route path='/' component={Layout}>
     		<IndexRoute component={Welcome}/>
-    		<Route path='CptClass' component={CptClass}/>
-    		<Route path='Ending' component={Ending}/>
-            <Route path='LookUp' component={LookUp}/>
-    		<Route path='Cert/:arrayIndex' component={Cert}/>
+    		<Route path='/CptClass' component={CptClass}/>
+    		<Route path='/Ending' component={Ending}/>
+            <Route path='/LookUp' component={LookUp}/>
+    		<Route path='/Cert/:arrayIndex' component={Cert}/>
     	</Route>
     </Router>,
     document.getElementById('app')

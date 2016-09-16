@@ -1,0 +1,327 @@
+[
+	{
+	    "id": 1,
+	    "title": "The Definitions and Effects of Sexual Abuse and Child Molestation",
+	    "videoPath": "http://player.vimeo.com/video/63165969?title=0&amp;byline=0&amp;portrait=0",
+	    "graded": false,
+	    "questionList": [
+	    	{
+		    	"questId": 1,
+		    	"questText": "Sexual abuse can occur without touching.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-3",
+		    	"markmarkCoreect": false
+	    	},
+	    	{
+		    	"questId": 2,
+		    	"questText": "Abuse and neglect may negatively affect a child’s emotional and social development.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-3",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 3,
+		    	"questText": "Exposing a child to pornographic material is not considered abuse.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-3",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 4,
+		    	"questText": "Not only forced activity, but persuasion can be considered abusive.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-3",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 5,
+		    	"questText": "Victims of child abuse often suffer from fear, guilt and anger.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-3",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 6,
+		    	"questText": "Child is defined as anyone, unmarried under the age of 16.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-3",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 7,
+		    	"questText": "Sexual abuse may negatively effect a child for their entire lives.",
+		    	"answers": [
+		    		"True",
+		    		"False"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-3",
+		    	"markCorrect": false
+	    	}
+	    ]
+	},
+	{
+	    "id": 2,
+	    "title": "Typical Patterns and Methods of Operation of a Child Molestern",
+	    "videoPath": "www.video.url",
+	    "graded": false,
+	    "questionList": [
+	    	{
+		    	"questId": 1,
+		    	"questText": "Situational offenders are:",
+		    	"answers": [
+		    		"Opportunists",
+		    		"Exhibitionists",
+		    		"Chauvinistic"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markmarkCoreect": false
+	    	},
+	    	{
+		    	"questId": 2,
+		    	"questText": "Molesters and child abusers are usually:",
+		    	"answers": [
+		    		"A respected member of the community, and known by the child",
+		    		"Strangers in trench coats",
+		    		"Over 50 years of age"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 3,
+		    	"questText": "Molesters can groom a child by:",
+		    	"answers": [
+		    		"Threatening the child",
+		    		"Offering gifts or favors to gain the trust of the child",
+		    		"Forcing the child to participate in sexual conduct"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 4,
+		    	"questText": "A molester tries to insure secrecy by:",
+		    	"answers": [
+		    		"Accepting responsibility for his actions",
+		    		"Threats, bribery or blame",
+		    		"Encouraging the child to discuss his fears with trusted friends"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 5,
+		    	"questText": "An offender often:",
+		    	"answers": [
+		    		"Notifies the church or camp that he has offended in the past",
+		    		"Asks for accountability from peers for abusive behavior",
+		    		"Seeks involvement in child related situations"
+		    	],
+		    	"correct": 2,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 6,
+		    	"questText": "Statistics indicate most molesters are:",
+		    	"answers": [
+		    		"Male",
+		    		"Female",
+		    		"Female cousins"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	}
+	    ]
+	},
+	{
+	    "id": 3,
+	    "title": "Signs, Symptoms and Reporting of Suspected Sexual Abuse",
+	    "videoPath": "www.video.url",
+	    "graded": false,
+	    "questionList": [
+	    	{
+		    	"questId": 1,
+		    	"questText": "Which of the following behaviors is not a sign of possible abuse?",
+		    	"answers": [
+		    		"Fear of a certain person or family member",
+		    		"Torn stained or bloody underwear",
+		    		"Is a top athlete"
+		    	],
+		    	"correct": 2,
+		    	"responce": "-1",
+		    	"markmarkCoreect": false
+	    	},
+	    	{
+		    	"questId": 2,
+		    	"questText": "Identify which action does not indicate a form of sexual abuse:",
+		    	"answers": [
+		    		"Allowing a child to view pornography",
+		    		"Touching the chest, stomach, genital area, buttocks or upper legs",
+		    		"Shoulder to shoulder hugs"
+		    	],
+		    	"correct": 2,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 3,
+		    	"questText": "You are the sponsor for a child that tells you that she has been forced to watch pornographic movies by an adult, should you report this?",
+		    	"answers": [
+		    		"Yes, immediately",
+		    		"No, because suspected abuse did not occur at camp",
+		    		"Sometimes, but only when you have concluded the child’s story is true"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 4,
+		    	"questText": "When reporting sexual abuse, you must report incidents even if you cannot confirm the report of abuse is true.",
+		    	"answers": [
+		    		"True",
+		    		"False",
+		    		"Only if you are reasonably sure it is true"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 5,
+		    	"questText": "Which of the following would not be considered a warning sign of a potential abuser?",
+		    	"answers": [
+		    		"Adults who single out one child for special attention",
+		    		"Adult who like to work with youth",
+		    		"Adults who own children’s books, toys and games even though he/she has no children"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 6,
+		    	"questText": "When abuse is strongly suspected, a camp counselor should:",
+		    	"answers": [
+		    		"Interview everyone in the cabin",
+		    		"Maintain the highest level of confidentially while reporting to the licensed camp operator",
+		    		"Ignore your suspicions and don't get involved"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	}
+	    ]
+	},
+	{
+	    "id": 4,
+	    "title": "Recommended Procedures to Reduce, Prevent and Report Suspected Sexual Abuse or Molestation of Campers",
+	    "videoPath": "www.video.url",
+	    "graded": false,
+	    "questionList": [
+	    	{
+		    	"questId": 1,
+		    	"questText": "Which location is most appropriate to meet a camper for counseling?",
+		    	"answers": [
+		    		"A semi-private area easily seen by others",
+		    		"Alone in the church van",
+		    		"Behind the worship center in the dark"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markmarkCoreect": false
+	    	},
+	    	{
+		    	"questId": 2,
+		    	"questText": "Which example is not an example of a camper’s privacy?",
+		    	"answers": [
+		    		"Watching campers change clothes",
+		    		"Walking with a camper to the worship center",
+		    		"Laying in the bed of a camper"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 3,
+		    	"questText": "When reporting sexual abuse at camp what is your responsibility?",
+		    	"answers": [
+		    		"Notify your Licensed Youth Camp Operator (Camp Manager)",
+		    		"Get help even if you have to leave the camper in danger",
+		    		"Investigate allegations"
+		    	],
+		    	"correct": 0,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 4,
+		    	"questText": "Which are inappropriate behaviors?",
+		    	"answers": [
+		    		"Wrestling and tickling",
+		    		"Full frontal hugs or waist hugging",
+		    		"All of the above"
+		    	],
+		    	"correct": 2,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 5,
+		    	"questText": "Close supervision by adults during all swim activities is:",
+		    	"answers": [
+		    		"Requested",
+		    		"Mandatory",
+		    		"A good idea"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	},
+	    	{
+		    	"questId": 6,
+		    	"questText": "What is the purpose of this training?",
+		    	"answers": [
+		    		"Need to fill a time slot",
+		    		"Safety and protection of our children, churches, and camp",
+		    		"To discourage working with children and youth"
+		    	],
+		    	"correct": 1,
+		    	"responce": "-1",
+		    	"markCorrect": false
+	    	}
+	    ]
+	}
+]
