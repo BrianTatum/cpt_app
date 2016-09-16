@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AdultReq from './layout_comps/AdultReq';
+import CreditSign from './layout_comps/creditSign';
 
 export default class Welcome extends React.Component {
 	render(){
@@ -14,16 +15,7 @@ export default class Welcome extends React.Component {
           </div>
           <div className='col-md-4 col-xs-12'>
             <AdultReq />
-            <div className='row'>
-              <div className='col-xs-12'>
-                <h3 className='text-center'>
-                  <strong>Training Curriculum and Test Material Produced by</strong>
-                </h3>
-                <h3 className='text-center'>
-                  <strong>Texas Baptist Camp Managers Association</strong>
-                </h3>
-              </div>
-            </div>
+            <CreditSign />
           </div>
         </div>
       </div>

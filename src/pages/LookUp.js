@@ -7,6 +7,7 @@ import CertList from './layout_comps/CertList';
 import LookUpForm from './layout_comps/LookUpForm';
 import globalData from './layout_comps/globalData';
 import WrongMark from './layout_comps/WrongMark';
+import CreditSign from './layout_comps/CreditSign';
 
 export default class LookUp extends React.Component {
 	constructor() {
@@ -36,16 +37,7 @@ export default class LookUp extends React.Component {
 					</div>
 					<div className='col-md-4 col-xs-12'>
 			        	<AdultReq />
-			        	<div className='row'>
-			              <div className='col-xs-12'>
-			                <h3 className='text-center'>
-			                  <strong>Training Curriculum and Test Material Produced by</strong>
-			                </h3>
-			                <h3 className='text-center'>
-			                  <strong>Texas Baptist Camp Managers Association</strong>
-			                </h3>
-			              </div>
-			            </div>
+			        	<CreditSign />
 			        </div>
 				</div>
 				<Modal show={this.state.showModal} onHide={this._close.bind(this)}>

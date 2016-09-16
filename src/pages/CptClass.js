@@ -8,6 +8,7 @@ import globalData from './layout_comps/globalData';
 import TestQuestion from './layout_comps/TestQuestion';
 import CptEnd from './layout_comps/CptEnd';
 import CptRedo from './layout_comps/CptRedo';
+import CreditSign from './layout_comps/CreditSign';
 
 export default class CptClass extends React.Component {
 	
@@ -74,6 +75,7 @@ export default class CptClass extends React.Component {
 					</div>
 					<div className='col-md-3'>
 						<ScorePanel section={this.state.curentSection + 1} score={this.state.cptScore} totalSections={this.state.cptClass.length}  />
+						<CreditSign />
 					</div>
 				</div>
 				<Modal show={this.state.showModal} bsSize="large" onHide={this._close.bind(this)}>
