@@ -15,24 +15,30 @@ export default class CptClass extends React.Component {
 	constructor() {
 	    super();
 	    this.state = {
-	      activeKey: '1',
-	      showModal: false,
-	      cptClass: globalData.cptClass,
+	    	activeKey: '1',
+	    	showModal: false,
+	    	cptClass: globalData.cptClass,
+	    	startTime: new Date(),
+	    	timeLapse: '00:00:00',
+	    	curentSection: 0,
+			cptScore: 0,
+			correctAnswers: 0,
+			totalQuestion: 0
 	    };
 	    this.cptResult = (<h1>No Pass No Play</h1>);
 	}
 
-	handleSelect(activeKey) {
-    	this.setState({ activeKey });
-	}
-
 	componentWillMount() {
 		this._fetchCptClass();
-	    this.setState({	curentSection: 0,
-	    				cptScore: 0,
-	      				correctAnswers: 0,
-	      				totalQuestion: 0,});
-	  }
+	}
+
+	componentDidMount() {
+		this._timer = setInterval(() => this._updateTime(),500);
+	}
+
+	comonentWillUnmount() {
+		clearInterval(this._timer);
+	}
 
 	render(){
 		const questions = this._getQuestions(this.state.cptClass[this.state.curentSection].questionList, this.state.curentSection);
@@ -55,7 +61,7 @@ export default class CptClass extends React.Component {
 				</div>		
 				<div className='row'>
 					<div className='col-md-9'>
-						<PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect.bind(this)} accordion>
+						<PanelGroup activeKey={this.state.activeKey} onSelect={this._handleSelect.bind(this)} accordion>
 					        <Panel header="Section Video" eventKey="1">
 					        	<div className='responsive-iframe-container'>
 					        		<iframe src={this.state.cptClass[this.state.curentSection].videoPath} width="640" height="427" frameBorder="0" allowFullScreen></iframe>					        	
@@ -74,7 +80,7 @@ export default class CptClass extends React.Component {
 					    </PanelGroup>
 					</div>
 					<div className='col-md-3'>
-						<ScorePanel section={this.state.curentSection + 1} score={this.state.cptScore} totalSections={this.state.cptClass.length}  />
+						<ScorePanel section={this.state.curentSection + 1} score={this.state.cptScore} totalSections={this.state.cptClass.length}  time={this.state.timeLapse}/>
 						<CreditSign />
 					</div>
 				</div>
@@ -105,6 +111,18 @@ export default class CptClass extends React.Component {
 		);
 	}
 
+	_updateTime(){
+		const newTime = new Date();
+		const lapseTime = newTime - this.state.startTime;
+		let s = Math.floor((lapseTime /1000) % 60);
+		let m = Math.floor(((lapseTime % 86400000) % 3600000) / 60000);
+		let h = Math.floor((lapseTime % 86400000)/3600000);
+		if (s<10){s= '0' + s;}
+		if (m<10){m= '0' + m;}
+		if (h<10){h= '0' + h;}
+    	this.setState({timeLapse: h+':'+m+':'+s});
+	}
+
 	_close() {
 	    this.setState({ showModal: false });
 	}
@@ -116,6 +134,11 @@ export default class CptClass extends React.Component {
 	_open() {
 	    this.setState({ showModal: true });
 	}
+
+	_handleSelect(activeKey) {
+    	this.setState({ activeKey });
+	}
+
 	
 	_recordAnswer(question,answer){
 		const stateCopy = Object.assign({}, this.state);
