@@ -82,7 +82,6 @@ export default class CptEnd extends React.Component {
 		if (this._fname.value && this._lname.value && this._email.value) {
 			globalData.certList = [];
 			const certDate = new Date();
-			alert(certDate);
 			const newCert= {
 				FirstName: 	this._fname.value,
 				LastName: 	this._lname.value,
