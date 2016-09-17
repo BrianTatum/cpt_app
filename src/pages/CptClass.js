@@ -36,7 +36,7 @@ export default class CptClass extends React.Component {
 		this._timer = setInterval(() => this._updateTime(),500);
 	}
 
-	comonentWillUnmount() {
+	componentWillUnmount() {
 		clearInterval(this._timer);
 	}
 
