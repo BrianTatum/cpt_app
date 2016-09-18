@@ -12,6 +12,7 @@ export default class CptEnd extends React.Component {
 	    super();
 	    this.state = {
 	      showModal: false,
+	      errorMsg: ""
 	    };
 	}
 
@@ -65,7 +66,7 @@ export default class CptEnd extends React.Component {
 		          			<WrongMark styling={errorStyling} />
 		          		</div>
 		          		<div className='col-sm-9'>
-		            		<h2>Must enter First Name, Last Name and Email address.</h2>
+		            		<h2>{this.state.errorMsg}</h2>
 		            	</div>
 		            </div>
 		          </Modal.Body>
@@ -79,7 +80,8 @@ export default class CptEnd extends React.Component {
 
 	_handleSubmit(event) {
 		event.preventDefault();
-		if (this._fname.value && this._lname.value && this._email.value) {
+		if (/^[a-zA-Z]+$/.test(this._fname.value) && /^[a-zA-Z]+$/.test(this._lname.value)
+			 && /^[a-zA-Z\-_\.]+@[a-zA-Z]+\.(org|net|com)$/.test(this._email.value)) {
 			globalData.certList = [];
 			const certDate = new Date();
 			const newCert= {
@@ -100,7 +102,11 @@ export default class CptEnd extends React.Component {
 			globalData.certList.push(newCert);
 			hashHistory.push('/Cert/0');
 		} else {
-			this._open();
+			if (!this._fname.value || !this._lname.value || !this._email.value) {
+				this._open('Must enter First Name, Last Name and Email address.');
+			} else {
+				this._open('Invalid character in Name field or invalid email format.');
+			}
 		}
 	}
 
@@ -108,7 +114,8 @@ export default class CptEnd extends React.Component {
 	    this.setState({ showModal: false });
 	}
 
-	_open() {
-	    this.setState({ showModal: true });
+	_open(msg) {
+	    this.setState({ showModal: true,
+	    				errorMsg: msg });
 	}
 }
