@@ -251,6 +251,9 @@ tbody {
 }
 @media print {
   .bodyDown {margin-top: 0}
+  .container {
+    width: 750px !important;
+  }
 }
 #cert-sec {
   border: 20px solid black;
