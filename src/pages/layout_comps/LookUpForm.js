@@ -56,7 +56,7 @@ export default class LookUpForm extends React.Component {
 			if (!this._name.value && !this._email.value){
 				this._openError('Must enter Last Name or Email address to search database for CPT Certification.');
 			} else {
-				this._openError('Invalid character in search field.');
+				this._openError('Invalid character in search field or incomplete email address.');
 			}
 		}
 	}

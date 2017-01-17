@@ -81,7 +81,7 @@ export default class CptEnd extends React.Component {
 	_handleSubmit(event) {
 		event.preventDefault();
 		if (/^[a-zA-Z]+$/.test(this._fname.value) && /^[a-zA-Z]+$/.test(this._lname.value)
-			 && /^[a-zA-Z\-_\.]+@[a-zA-Z]+\.(org|net|com)$/.test(this._email.value)) {
+			 && /^[a-zA-Z0-9\-_\.]+@[a-zA-Z0-9]+\.(org|net|com)$/.test(this._email.value)) {
 			globalData.certList = [];
 			const certDate = new Date();
 			const newCert= {
@@ -94,7 +94,7 @@ export default class CptEnd extends React.Component {
 			$.ajax({
               type: "POST",
               crossDomain: true,
-              url: 'http://registration.etbe.org/cpt_cert',
+              url: 'https://registration.etbe.org/cpt_cert',
               data: { FirstName: this._fname.value, LastName: this._lname.value, Score: this.props.score, Email: this._email.value },
               dataType: 'json',
               success: () => {alert("Cert Saved")}

@@ -64,7 +64,7 @@ export default class LookUp extends React.Component {
 	}
 
 	_getCerts(name, email){
-		const urlString = "http://registration.etbe.org/cptcert?LastName=" + name + "&Email=" + email + "&JsonOnly=true&callback=?";
+		const urlString = "https://registration.etbe.org/cptcert?LastName=" + name + "&Email=" + email + "&JsonOnly=true&callback=?";
 		$.ajax({
 	      method: 'GET',
 	      url: urlString,
