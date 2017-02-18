@@ -22,7 +22,7 @@ export default class Cert extends React.Component {
 					<div className='row hidden-print'>
 						<div className='col-xs-12'>
 							<h2 className='text-justify'>Use browser print function to print out certificate and then click the "Return" button below.</h2>
-							<Link to='/LookUp' className='btn btn-success btn-lg'>Return</Link>
+							<Link to='/LookUp' className='btn btn-primary btn-lg'>Return</Link>
 						</div>
 					</div>
 					<section id="cert-sec" className="cpt-cert">
@@ -53,7 +53,7 @@ export default class Cert extends React.Component {
 					<div className='row hidden-print'>
 						<div className='col-xs-12'>
 							<h2 className='text-justify'>No record found. Return to Look Up.</h2>
-							<Link to='/LookUp' className='btn btn-success btn-lg'>Return</Link>
+							<Link to='/LookUp' className='btn btn-primary btn-lg'>Return</Link>
 						</div>
 					</div>
 				</div>

@@ -76,7 +76,7 @@ export default class CptEnd extends React.Component {
 							</div>
 							<div className='row'>
 								<div className='col-xs-offset-4 col-xs-4'>
-									<Button bsStyle='success' bsSize="large" type='submit' block active>Submit</Button>
+									<Button bsStyle='primary' bsSize="large" type='submit' block active>Submit</Button>
 								</div>
 							</div>
 						</form>
@@ -97,7 +97,7 @@ export default class CptEnd extends React.Component {
 		            </div>
 		          </Modal.Body>
 		          <Modal.Footer>
-		            <Button bsStyle='success' bsSize="large" onClick={this._close.bind(this)}>Close</Button>
+		            <Button bsStyle='primary' bsSize="large" onClick={this._close.bind(this)}>Close</Button>
 		          </Modal.Footer>
 		        </Modal>
 			</div>

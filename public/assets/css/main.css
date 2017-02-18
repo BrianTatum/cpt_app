@@ -14,24 +14,24 @@ body{
 }
 /* Sets color accross the site */
 .main-color, .navbar-default .navbar-nav>li>a, .modal-header {
-  background-color: #1b5e20 !important;
+  background-color: #1A3440 !important;
   color: #fafafa !important;
 }
 .main-color:hover,  {
-  color: #eeeeee !important;
+  color: #34677f !important;
 }
 .highlight:hover, .highlight:focus, .navbar-default .navbar-nav>li>a:hover {
-  background-color: #2e7d32 !important;
+  background-color: #34677f !important;
 }
 .main-color-border {
-  border-color: #1b5e20 !important;
+  border-color: #1A3440 !important;
 }
 .panel-default>.panel-heading {
-  background-color: #1b5e20 !important;
+  background-color: #1A3440 !important;
   color: #fafafa !important;
 }
 .panel-default {
-   border-color: #1b5e20 !important;
+   border-color: #1A3440 !important;
 }
 /* Narbar settings accross site */
 .navbar-toggle {
@@ -152,8 +152,8 @@ a .icon-text{
 }
 
 tbody {
-  border-top: solid 3px #1b5e20 !important;
-  border-bottom: solid 3px #1b5e20 !important;
+  border-top: solid 3px #1A3440 !important;
+  border-bottom: solid 3px #1A3440 !important;
 }
 /* Sets the styles for the footer accross the site */
 .footer {

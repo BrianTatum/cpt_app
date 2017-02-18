@@ -151,12 +151,12 @@ export default class CptClass extends React.Component {
 		if (this.state.cptClass[this.state.curentSection].graded) {
 			return <span />
 		} else {
-			return <button className='btn btn-success btn-lg active pull-right' type="submit">Submit</button>
+			return <button className='btn btn-primary btn-lg active pull-right' type="submit">Submit</button>
 		}
 	}
 	_displayNextButton() {
 		if (this.state.cptClass[this.state.curentSection].graded) {
-			return <button className='btn btn-success btn-lg active pull-right' onClick={this._changeSection.bind(this)}>Next Section</button>
+			return <button className='btn btn-primary btn-lg active pull-right' onClick={this._changeSection.bind(this)}>Next Section</button>
 		} else {
 			return <span />
 		}

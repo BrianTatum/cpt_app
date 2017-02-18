@@ -44,7 +44,7 @@ export default class LookUpForm extends React.Component {
 					</div>
 					<div className='row'>
 						<div className='col-xs-offset-0 col-sm-6 col-sm-offset-3' >
-							<button className='btn btn-success btn-lg active' style={{width: '100%'}} type="submit">Submit</button>
+							<button className='btn btn-primary btn-lg active' style={{width: '100%'}} type="submit">Submit</button>
 						</div>
 					</div>
 				</form>
@@ -63,7 +63,7 @@ export default class LookUpForm extends React.Component {
 		            </div>
 		          </Modal.Body>
 		          <Modal.Footer>
-		            <Button bsStyle='success' bsSize="large" onClick={this._closeError.bind(this)}>Close</Button>
+		            <Button bsStyle='primary' bsSize="large" onClick={this._closeError.bind(this)}>Close</Button>
 		          </Modal.Footer>
 		        </Modal>
 			</Panel>

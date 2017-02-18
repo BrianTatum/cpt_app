@@ -27,7 +27,7 @@ const CptRedo = ({path}) =>
 		</div>
 		<div className='row'>
 			<div className='col-sm-offset-4 col-sm-4'>
-				<Button bsStyle="success" bsSize="large" active block onClick={path}>Reset Training</Button>
+				<Button bsStyle="primary" bsSize="large" active block onClick={path}>Reset Training</Button>
 			</div>
 		</div>
 	</div>
