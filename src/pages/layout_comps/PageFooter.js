@@ -5,7 +5,7 @@ const PageFooter = () =>
       <div className='container'>
         <div className='row'>
           <div className='col-xs-12 col-sm-4'>
-            <a href='http://www.etbe.org'><img src='assets/images/logo.png' alt='Camp Logo' className='img-responsive' /></a>
+            <a href='http://www.etbe..org'><img src='assets/images/logo.png' alt='Camp Logo' className='img-responsive' /></a>
           </div>
           <div className='col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-3 col-md-offset-1'>
             <h2>Look for us on:</h2>

@@ -8,7 +8,7 @@ import globalData from './layout_comps/globalData';
 import TestQuestion from './layout_comps/TestQuestion';
 import CptEnd from './layout_comps/CptEnd';
 import CptRedo from './layout_comps/CptRedo';
-import CreditSign from './layout_comps/CreditSign';
+import CreditSign from './layout_comps/creditSign';
 
 export default class CptClass extends React.Component {
 	

@@ -7,7 +7,7 @@ import CertList from './layout_comps/CertList';
 import LookUpForm from './layout_comps/LookUpForm';
 import globalData from './layout_comps/globalData';
 import WrongMark from './layout_comps/WrongMark';
-import CreditSign from './layout_comps/CreditSign';
+import CreditSign from './layout_comps/creditSign';
 
 export default class LookUp extends React.Component {
 	constructor() {
