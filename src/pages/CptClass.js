@@ -197,7 +197,7 @@ export default class CptClass extends React.Component {
 	_fetchCptClass() {
 		jQuery.ajax({
 	      method: 'GET',
-	      url: 'cptFullClass.json',
+		  url: 'cptFullClass.json',
 	      dataType: 'json',
 	      success: (cptClass) => {
 	      	this.setState({cptClass});
