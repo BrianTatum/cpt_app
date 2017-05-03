@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --content-base public --hot --inline"
+    "dev": "webpack-dev-server --content-base public --hot --inline",
+    "pro": "webpack --optimize-minimize --define process.env.NODE_ENV='production'"
   },
   "author": "Brian Tatum <brianttatum@gmail.com>",
   "license": "ISC",
