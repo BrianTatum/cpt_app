@@ -20,7 +20,8 @@ module.exports = {
   },
   output: {
     path: __dirname + "/public/assets/js",
-    filename: "bundle.min.js"
+    filename: "bundle.min.js",
+    publicPath: "/assets/js"
   },
   plugins: debug ? [] : [
     //new webpack.optimize.DedupePlugin(),
