@@ -32,7 +32,7 @@ export default class Cert extends React.Component {
 							<h3 className='text-center' style={certMargins0}>Training Course Approval Number: YC06-0001</h3>
 							<h3 className="text-center" style={certNameHead}>This certificate certifies that</h3>
 							<h1 id="cert-name" className='text-center' style={certMargins0}><strong>{cptCert.FirstName} {cptCert.LastName}</strong></h1>
-							<h3 className="text-center" style={certMargins0}>has completing the training className</h3>
+							<h3 className="text-center" style={certMargins0}>has completing the training class</h3>
 							<h3 className="text-center" style={certMargins0}>with a score above 70%.</h3>
 							<h4 className="text-center" style={certDateHead}>Date of Completion:</h4>
 							<h3 id="cert-date" className="text-center" style={certMargins0}>{months[certDate.getMonth()]} {certDate.getDate()}, {certDate.getFullYear()}</h3>
