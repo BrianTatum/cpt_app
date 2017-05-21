@@ -4,7 +4,8 @@ var webpack = require('webpack');
 module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : false,
-  entry: "./src/app.js",
+  entry: ["babel-polyfill", "./src/app.js"],
+  //entry: "./src/app.js",
   module: {
     loaders: [
       {
