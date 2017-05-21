@@ -5,7 +5,6 @@ module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : false,
   entry: ["babel-polyfill", "./src/app.js"],
-  //entry: "./src/app.js",
   module: {
     loaders: [
       {
