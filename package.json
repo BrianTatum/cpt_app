@@ -4,8 +4,8 @@
   "description": "Child Protection Training",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --content-base public --hot --inline",
+    "test": "mocha --compilers js:babel-core/register --require ./src/test/testsetup.js ./src/test/*.test.js",
+    "start": "webpack-dev-server --content-base public --hot --inline",
     "pro": "webpack --optimize-minimize --define process.env.NODE_ENV=production"
   },
   "author": "Brian Tatum <brianttatum@gmail.com>",
@@ -37,5 +37,13 @@
     "react-router": "^2.7.0",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "fetch-mock": "^5.12.1",
+    "jsdom": "^11.1.0",
+    "mocha": "^3.5.0",
+    "mocha-loader": "^1.1.1",
+    "react-addons-test-utils": "^15.6.0"
   }
 }

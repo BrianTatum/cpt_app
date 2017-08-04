@@ -1,4 +1,4 @@
-import jQuery from 'jquery';
+//import jQuery from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
@@ -9,7 +9,7 @@ import LookUp from './pages/LookUp';
 import Cert from './pages/Cert';
 import Layout from './pages/Layout';
 
-jQuery(function() {
+//jQuery(function() {
   ReactDOM.render(
     <Router history={hashHistory}>
     	<Route path='/' component={Layout}>
@@ -21,4 +21,4 @@ jQuery(function() {
     </Router>,
     document.getElementById('app')
   );
-})
+//})
