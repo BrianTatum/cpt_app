@@ -11,8 +11,8 @@ import PageFooter from '../pages/layout_comps/PageFooter';
 import ScorePanel from '../pages/layout_comps/ScorePanel';
 import WrongMark from '../pages/layout_comps/WrongMark';
 
-describe('Display Components', () => {
-	//Render tests for all statless and functionless comppnents
+describe('Stateless functional components:', () => {
+	//Render tests for all Stateless functional components.
 	it('should render AdultReq', () => {
 		const renderer = TestUtils.createRenderer();
 		renderer.render( <AdultReq />);

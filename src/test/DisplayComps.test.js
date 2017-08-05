@@ -2,10 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import expect from 'expect';
 import {renderIntoDocument} from 'react-addons-test-utils';
+import Welcome from '../pages/Welcome.js';
 import CertRows from '../pages/layout_comps/CertRows';
+import Cert from '../pages/Cert'
 
-describe('CertRows Component', () => {
-	it('should render', () => {
+describe('Display Components:', () => {
+	//Render tests for display components with state.
+	it('should render Welcome', () => {
+		const item = renderIntoDocument(
+			<Welcome />
+		);
+		//Assertions
+		expect(item).toExist();
+	});
+
+	it('should render CertRows', () => {
 		const item = renderIntoDocument(
 			<table>
 				<tbody>
@@ -20,5 +31,6 @@ describe('CertRows Component', () => {
 		);
 		//Assertions
 		expect(item).toExist();
-	})
+	});
+
 });
