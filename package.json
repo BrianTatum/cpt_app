@@ -4,7 +4,7 @@
   "description": "Child Protection Training",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./src/test/testsetup.js ./src/test/*.test.js",
+    "test": "cls & mocha --compilers js:babel-core/register --require ./src/test/testsetup.js ./src/test/*.test.js",
     "start": "webpack-dev-server --content-base public --hot --inline",
     "pro": "webpack --optimize-minimize --define process.env.NODE_ENV=production"
   },

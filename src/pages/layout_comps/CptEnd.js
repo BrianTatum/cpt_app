@@ -49,28 +49,28 @@ export default class CptEnd extends React.Component {
 						<form className='form-horizontal' onSubmit={this._handleSubmit.bind(this)}>
 							<div className='row row-spacing'>
 								<div className={this.state.fnameField}>
-									<label className='col-xs-4 control-label' for='firstName'>First Name:</label>
+									<label className='col-xs-4 control-label' htmlFor='firstName'>First Name:</label>
 									<div className='col-xs-8'>
 										<input id='firstName' className='form-control' placeholder="First Name" ref={c => this._fname = c} />
-										<span class={this.state.fnameIcon} aria-hidden="true"></span>
+										<span className={this.state.fnameIcon} aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
 							<div className='row row-spacing'>
 								<div className={this.state.lnameField}>
-									<label className='col-xs-4 control-label' for="lastName">Last Name:</label>
+									<label className='col-xs-4 control-label' htmlFor="lastName">Last Name:</label>
 									<div className='col-xs-8'>
 										<input id='lastName' className='form-control' placeholder="Last Name" ref={c => this._lname = c} />
-										<span class={this.state.lnameIcon} aria-hidden="true"></span>
+										<span className={this.state.lnameIcon} aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
 							<div className='row row-spacing'>
 								<div className={this.state.emailField}>
-									<label className='col-xs-4 control-label'>Email Address:</label>
+									<label className='col-xs-4 control-label' htmlFor='emailAddy'>Email Address:</label>
 									<div className='col-xs-8'>
-										<input className='form-control' placeholder="Email Address" ref={c => this._email = c} />
-										<span class={this.state.emailIcon} aria-hidden="true"></span>
+										<input id='emailAddy' className='form-control' placeholder="Email Address" ref={c => this._email = c} />
+										<span className={this.state.emailIcon} aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
